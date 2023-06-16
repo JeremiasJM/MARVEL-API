@@ -1,0 +1,47 @@
+.main {
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  position: relative;
+  height: 310px;
+  width: 800px;
+}
+
+.loader-gray {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 310px;
+  width: 800px;
+  background: url(https://proviamiga.com/carrusel/Avengers_Endgame_Other_Logo.png);
+  filter: grayscale(100%);
+}
+
+.loader-color {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 310px;
+  animation: gray-to-color 10s ease-in-out infinite;
+
+  > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+  }
+}
+
+@keyframes gray-to-color {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100%;
+  }
+}
+

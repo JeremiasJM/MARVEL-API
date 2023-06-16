@@ -1,0 +1,93 @@
+.h2-list {
+  font-size: var(--h1-font-size);
+  color: var(---color-white);
+  text-align: center;
+  text-decoration: underline var(---color-white);
+  background-color: var(---color-black);
+}
+.container-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+.card-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.card-list img {
+  width: 65%;
+  height: 65%;
+}
+.title-list {
+  font-size: var(--h3-font-size);
+  color: var(---color-black);
+  text-align: center;
+}
+.btn-details {
+  border-radius: 5px;
+  background-color: var(---color-black);
+  color: var(---color-white);
+  padding: 0.5em 2em;
+}
+.btn-details:hover {
+  border-radius: 5px;
+  background-color: var(---color-red);
+  color: var(---color-white);
+  padding: 0.5em 2em;
+  transform: translateY(0.2rem);
+}
+
+@media (max-width: 768px) {
+    .title-list {
+        font-size: var(--small-font-size);
+        
+      }
+  .btn-details {
+    border-radius: 5px;
+    background-color: var(---color-black);
+    color: var(---color-white);
+    padding: 0.3em 1.5em;
+    font-size: var(--normal-font-size);
+  }
+  .btn-details:hover {
+    border-radius: 5px;
+    background-color: var(---color-red);
+    color: var(---color-white);
+    padding: 0.3em 1.5em;
+    transform: translateY(0.1rem);
+  }
+}
+@media (max-width: 500px) {
+    .title-list {
+        font-size: var(--smaller-font-size);
+        
+      }
+  .container-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 2rem;
+  }
+  .btn-details {
+    border-radius: 5px;
+    background-color: var(---color-black);
+    color: var(---color-white);
+    padding: 0.3em 1.5em;
+    font-size: var(--smaller-font-size);
+  }
+  .btn-details:hover {
+    border-radius: 5px;
+    background-color: var(---color-red);
+    color: var(---color-white);
+    padding: 0.3em 1.5em;
+    transform: translateY(0.1rem);
+  }
+}
