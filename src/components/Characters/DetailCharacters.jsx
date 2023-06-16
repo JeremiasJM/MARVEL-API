@@ -33,7 +33,7 @@ export const DetailCharacters = () => {
              <ul>
               <h2>personaje:</h2>
               {personaje.series.items.length === 0 ? (
-                <p>Not found</p>
+                <p>Not found Series</p>
               ) : (
                 personaje.series.items.map((personaje) => (
                   <li key={Math.random() * 1000}> -{personaje.name} </li>

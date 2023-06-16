@@ -31,9 +31,9 @@ export const DetailComics = () => {
               </>
             )}
              <ul>
-              <h2>Personajes:</h2>
+              <h2>Characters:</h2>
               {comic.characters.items.length === 0 ? (
-                <p>Not found</p>
+                <p>Not found Characters</p>
               ) : (
                 comic.characters.items.map((c) => (
                   <li key={Math.random() * 1000}> -{c.name} </li>
