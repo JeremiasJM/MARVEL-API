@@ -1,9 +1,11 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 import { useFetch } from "../../useFetch";
 import { charactersUrl, ts, publicKey, hash, limit } from "../../utils/utils";
+import SearchFilter from "../Search/Search";
+import CharacterList from "../List/ListCharacters";
+import PaginationButtons from "../PaginationButton/PaginationButton";
 
-export const ListCharacters = () => {
+const ListCharacters = () => {
   const [visibleCount, setVisibleCount] = useState(5);
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -30,66 +32,23 @@ export const ListCharacters = () => {
   return (
     <>
       <h2 className="h2-list">Characters</h2>
-      <div className="search">
-        <input
-          type="text"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          placeholder="Buscar personaje"
-        />
-      </div>
+      <SearchFilter searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <div className="container">
-        <div className="container-list container">
-          {error && <li>Error: {error}</li>}
-          {loading && <p>Loading...</p>}
-
-          {data
-            ?.filter((personaje) =>
-              personaje.name.toLowerCase().includes(searchTerm.toLowerCase())
-            )
-            .slice(0, visibleCount)
-            .map((personaje) => (
-              <div
-                key={personaje.id}
-                to={`/comics/${personaje.id}`}
-                className="card-list"
-              >
-                <img
-                  src={`${personaje.thumbnail.path}.${personaje.thumbnail.extension}`}
-                  alt=""
-                />
-                <h1 className="title-list" key={personaje.id}>
-                  {personaje.name}
-                </h1>
-                <Link
-                  to={`/characters/${personaje.id}`}
-                  className="btn-details"
-                >
-                  Details
-                </Link>
-              </div>
-            ))}
-        </div>
+      {error && <p>Error: {error}</p>}
+      {loading && <p>Loading...</p>}
+        <CharacterList data={data} searchTerm={searchTerm} visibleCount={visibleCount} />
         {data && (
-          <div className="pagination-buttons">
-            {visibleCount > 5 && (
-              <button onClick={handleShowLess} className="btn-pagination">
-                Volver atrás
-              </button>
-            )}
-            {data.length > visibleCount && (
-              <button onClick={handleShowMore} className="btn-pagination">
-                Ver más
-              </button>
-            )}
-            {visibleCount > 5 && (
-              <button onClick={handleReset} className="btn-pagination">
-                Volver a las primeras
-              </button>
-            )}
-          </div>
+          <PaginationButtons
+            handleShowLess={handleShowLess}
+            handleShowMore={handleShowMore}
+            handleReset={handleReset}
+            visibleCount={visibleCount}
+            data={data}
+          />
         )}
       </div>
     </>
   );
 };
+
+export default ListCharacters;

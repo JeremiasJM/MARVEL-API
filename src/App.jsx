@@ -5,25 +5,29 @@ import { DetailCharacters } from "./components/Characters/DetailCharacters";
 import { DetailComics } from "./components/Comics/DetailComics";
 import Comics from "./pages/Comics";
 import Header from "./components/Header/Header";
-import Footer from './components/Footer/Footer'
+import Footer from "./components/Footer/Footer";
+import { Mcu } from "./pages/Mcu";
+import { McuDetails } from "./components/McuDetails";
 
-const App= ()=> {
+
+const App = () => {
   return (
     <>
       <BrowserRouter>
-      <Header/>
+        <Header />
         <Routes>
-          
           <Route path="/" element={<Home />} />
           <Route path="/characters" element={<Characters />} />
           <Route path="/characters/:id" element={<DetailCharacters />} />
           <Route path="/comics" element={<Comics />} />
           <Route path="/comics/:id" element={<DetailComics />} />
+          <Route path="/mcu" element={<Mcu />} />
+          <Route path="/mcu/:id" element={<McuDetails />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </BrowserRouter>
     </>
   );
-}
+};
 
 export default App;
