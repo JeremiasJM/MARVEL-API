@@ -3,7 +3,7 @@ import ComicsCard from "../Card/CardComics";
 
 const ComicsList = ({ data, searchTerm, visibleCount }) => {
   return (
-    <div className="container-list container">
+    <div className="container-list container container-2">
       {data
         ?.filter((personaje) =>
           personaje.title.toLowerCase().includes(searchTerm.toLowerCase())

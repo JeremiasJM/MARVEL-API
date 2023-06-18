@@ -1,21 +1,19 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Averia+Gruesa+Libre&family=Black+Ops+One&family=Junge&display=swap");
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  --hue: 0;
-  --sat: 0%;
-  ---color-red: #e32f21 ;
-  ---color-white: #ffffff ;
-  ---color-black: #181619 ;
- 
+
+  ---color-red: #e32f21;
+  ---color-white: #ffffff;
+  ---color-black: #181619;
 
   /*========== Font and typography ==========*/
-  --body-font: "Poppins", sans-serif;
+  --title: "Black Ops One", cursive;
+  --sub-title: "Averia Gruesa Libre", cursive;
+  --parrafo: "Junge", serif;
 
   /*.5rem = 8px | 1rem = 16px ...*/
   --big-font-size: 2.5rem;
@@ -26,17 +24,6 @@
   --small-font-size: 0.875rem;
   --smaller-font-size: 0.813rem;
   --tiny-font-size: 0.625rem;
-
-  /*========== Font weight ==========*/
-  --font-normal: 400;
-  --font-medium: 500;
-  --font-semi-bold: 600;
-
-
-  /*========== z index ==========*/
-  --z-tooltip: 10;
-  --z-fixed: 100;
-  --z-modal: 1000;
 }
 
 /* Responsive typography */
@@ -67,20 +54,7 @@ body,
 button,
 input,
 textarea {
-  font-family: var(--body-font);
   font-size: var(--normal-font-size);
-}
-
-body {
-  background-color: var(--body-color);
-  color: var(--text-color);
-}
-
-h1,
-h2,
-h3 {
-  color: var(--title-color);
-  font-weight: var(--font-semi-bold);
 }
 
 ul {
@@ -102,64 +76,27 @@ img {
   height: auto;
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
-.section {
-  padding: 6rem 0 2rem;
-}
-
-.section__title {
-  font-size: var(--h1-font-size);
-  color: var(--title-color);
-}
-
-.section__subtitle {
-  display: block;
-  font-size: var(--small-font-size);
-  margin-bottom: 4rem;
-}
-
-.section__title,
-.section__subtitle {
-  text-align: center;
-}
-
-/*=============== LAYOUT ===============*/
 .container {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
-
-
-.div-cargando{
-  width: 100%;
-  min-height: 45vh;
+.container-2{
+  min-height: 49vh;
 }
-.cargando{
-  font-size: var(--big-font-size);
-  text-align: center;
+.loading {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 /* For medium devices */
 @media screen and (max-width: 768px) {
   body {
     margin: 0 0 var(--header-height) 0;
   }
- 
-
-  .section {
-    padding: 2rem 0 4rem;
-  }
-
-  .section__subtitle {
-    margin-bottom: var(--mb-3);
-  }
 }
 
-@media screen and (max-width: 576px) {
-}
-
-/* For small devices */
 @media screen and (max-width: 350px) {
   :root {
     --big-font-size: 2.25rem;

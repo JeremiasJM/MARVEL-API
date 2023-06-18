@@ -13,7 +13,7 @@ const CardHome = () => {
           <div className="card__info">
             <h3 className="card__title">Characters</h3>
             <span className="card__by">
-              Description{" "}
+              Description:{" "}
               <p className="card__author" title="author">
                 it's an exciting opportunity to explore a full roster of
                 characters from the Marvel world.
@@ -30,7 +30,7 @@ const CardHome = () => {
           <div className="card__info">
             <h3 className="card__title">Comics</h3>
             <span className="card__by">
-              Description{" "}
+              Description:{" "}
               <p className="card__author" title="author">
                 On this occasion, we invite you to explore the exciting world of
                 comics. Here you will find a list of comics that have left an
@@ -45,13 +45,13 @@ const CardHome = () => {
             <div className="card__img--hover"></div>
           </Link>
           <div className="card__info">
-            <span className="card__category"> Travel</span>
-            <h3 className="card__title">Discover the sea</h3>
+            <h3 className="card__title">MCU</h3>
             <span className="card__by">
-              by{" "}
-              <a href="#" className="card__author" title="author">
-                John Doe
-              </a>
+              Description:{" "}
+              <p href="#" className="card__author" title="author">
+                In this session you can find any character from the Marvel
+                cinematic world
+              </p>
             </span>
           </div>
         </article>

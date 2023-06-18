@@ -1,5 +1,5 @@
 import React from "react";
-import CardHome from "../components/CardHome/CardHome";
+import CardHome from "../components/Card/CardHome";
 
 export const Home = () => {
   return (

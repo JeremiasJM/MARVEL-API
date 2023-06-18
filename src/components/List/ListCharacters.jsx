@@ -3,7 +3,7 @@ import CharacterCard from "../Card/CardCharacter";
 
 const CharacterList = ({ data, searchTerm, visibleCount }) => {
   return (
-    <div className="container-list container">
+    <div className="container-list container container-2">
       {data
         ?.filter((personaje) =>
           personaje.name.toLowerCase().includes(searchTerm.toLowerCase())

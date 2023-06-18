@@ -1,14 +1,10 @@
-import React from 'react'
-import  ListComics  from '../components/Comics/ListComics'
-import Mian from '../components/Main/Mian'
+import MainComics from "../components/Main/MainComics";
 
- const Comics = () => {
+const Comics = () => {
   return (
     <>
-   {/*  <Mian/> */}
-    <ListComics/>
-    
+      <MainComics />
     </>
-  )
-}
-export default Comics
+  );
+};
+export default Comics;

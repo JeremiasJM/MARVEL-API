@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
- 
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -12,7 +10,7 @@ const Header = () => {
 
   return (
     <header>
-      <nav className="navbar container">
+      <nav className="navbar ">
         <div className="navbar-logo">
           <Link to={"/"}>
             <img
@@ -26,7 +24,7 @@ const Header = () => {
           <Link to={"/comics"}>Comics</Link>
           <Link to={"/mcu"}>MCU</Link>
         </div>
-        
+
         <div className="navbar-toggle" onClick={toggleMenu}>
           <div className={`bar ${menuOpen ? "open" : ""}`} />
           <div className={`bar ${menuOpen ? "open" : ""}`} />

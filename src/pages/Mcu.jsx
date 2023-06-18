@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Container } from "../components/Container";
-import { SearchBar } from "../components/SearchBar/SearchBar";
-import { Grid } from "../components/Grid/Grid";
+import { Container } from "../components/Mcu/Container";
+import { SearchBar } from "../components/Mcu/SearchBar";
+import { Grid } from "../components/Mcu/Grid";
 import { CardMcu } from "../components/Card/CardMcu";
 
 const IMAGE_SIZE = "portrait_fantastic";
@@ -11,7 +11,7 @@ export const Mcu = () => {
   let cards;
 
   if (heroes) {
-    cards = heroes.map((hero) => ( 
+    cards = heroes.map((hero) => (
       <CardMcu
         name={hero.name}
         id={hero.id}
@@ -21,10 +21,12 @@ export const Mcu = () => {
     ));
   }
   return (
-    <Container>
-      <h1>MCU</h1>
-      <SearchBar setter={setHeroes} />
-      <Grid>{cards ? cards : ""}</Grid>
-    </Container>
+    <>
+      <h2 className="h2-list">MCU</h2>
+      <Container>
+        <SearchBar setter={setHeroes} />
+        <Grid>{cards ? cards : ""}</Grid>
+      </Container>
+    </>
   );
 };

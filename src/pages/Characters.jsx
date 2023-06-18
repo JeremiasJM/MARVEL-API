@@ -1,11 +1,9 @@
-import  ListCharacters  from "../components/Characters/ListCharacters";
-import Mian from "../components/Main/Mian";
+import MainCharacters from "../components/Main/MainCharacters";
 
 const Characters = () => {
   return (
     <>
-      {/* <Mian /> */}
-      <ListCharacters />
+      <MainCharacters />
     </>
   );
 };

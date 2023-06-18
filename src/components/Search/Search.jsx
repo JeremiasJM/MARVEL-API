@@ -4,6 +4,7 @@ const SearchFilter = ({ searchTerm, setSearchTerm }) => {
   return (
     <div className="search">
       <input
+        className="input"
         type="text"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}

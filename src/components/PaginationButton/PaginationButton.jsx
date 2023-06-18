@@ -1,9 +1,15 @@
 import React from "react";
 
-const PaginationButtons = ({ handleShowLess, handleShowMore, handleReset, visibleCount, data }) => {
+const PaginationButtons = ({
+  handleShowLess,
+  handleShowMore,
+  handleReset,
+  visibleCount,
+  data,
+}) => {
   return (
     <div className="pagination-buttons">
-      {visibleCount > 5 && (
+      {visibleCount > 6 && (
         <button onClick={handleShowLess} className="btn-pagination">
           Volver atrás
         </button>
@@ -13,7 +19,7 @@ const PaginationButtons = ({ handleShowLess, handleShowMore, handleReset, visibl
           Ver más
         </button>
       )}
-      {visibleCount > 5 && (
+      {visibleCount > 6 && (
         <button onClick={handleReset} className="btn-pagination">
           Volver a las primeras
         </button>

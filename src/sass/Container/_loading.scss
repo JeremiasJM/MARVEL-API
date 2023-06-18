@@ -1,8 +1,6 @@
-.container-loading{
+.container-loading {
   height: 70vh;
   width: 80vw;
-  
-
 }
 
 .loader {
@@ -105,8 +103,8 @@
     content: "Cargando...";
   }
 }
-@media (max-width:768px){
-  .loader {    
-    top: 15rem;    
+@media (max-width: 768px) {
+  .loader {
+    top: 15rem;
   }
 }

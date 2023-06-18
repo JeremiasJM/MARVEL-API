@@ -1,9 +1,12 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const CharacterCard = ({ personaje }) => {
   return (
-    <div key={personaje.id} to={`/comics/${personaje.id}`} className="card-list">
+    <div
+      key={personaje.id}
+      to={`/comics/${personaje.id}`}
+      className="card-list"
+    >
       <img
         src={`${personaje.thumbnail.path}.${personaje.thumbnail.extension}`}
         alt=""

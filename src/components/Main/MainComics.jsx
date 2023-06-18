@@ -4,9 +4,10 @@ import { comicsUrl, ts, publicKey, hash, limit } from "../../utils/utils";
 import SearchFilter from "../Search/Search";
 import PaginationButtons from "../PaginationButton/PaginationButton";
 import ComicsList from "../List/ListComics";
+import { DotSpinner } from "@uiball/loaders";
 
-const ListComics = () => {
-  const [visibleCount, setVisibleCount] = useState(5);
+const MainComics = () => {
+  const [visibleCount, setVisibleCount] = useState(6);
   const [searchTerm, setSearchTerm] = useState("");
 
   const { data, loading, error } = useFetch(
@@ -14,19 +15,19 @@ const ListComics = () => {
   );
 
   useEffect(() => {
-    setVisibleCount(5);
+    setVisibleCount(6);
   }, [searchTerm]);
 
   const handleShowMore = () => {
-    setVisibleCount((prevCount) => prevCount + 5);
+    setVisibleCount((prevCount) => prevCount + 6);
   };
 
   const handleShowLess = () => {
-    setVisibleCount((prevCount) => Math.max(prevCount - 5, 5));
+    setVisibleCount((prevCount) => Math.max(prevCount - 6, 6));
   };
 
   const handleReset = () => {
-    setVisibleCount(5);
+    setVisibleCount(6);
   };
 
   return (
@@ -34,9 +35,18 @@ const ListComics = () => {
       <h2 className="h2-list">Comics</h2>
       <SearchFilter searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <div className="container">
-      {error && <p>Error: {error}</p>}
-      {loading && <p>Loading...</p>}
-        <ComicsList data={data} searchTerm={searchTerm} visibleCount={visibleCount} />
+        {error && <p>Error: {error}</p>}
+        {loading && (
+          <div className="loading">
+            {" "}
+            <DotSpinner size={40} speed={0.9} color="black" />
+          </div>
+        )}
+        <ComicsList
+          data={data}
+          searchTerm={searchTerm}
+          visibleCount={visibleCount}
+        />
         {data && (
           <PaginationButtons
             handleShowLess={handleShowLess}
@@ -51,4 +61,4 @@ const ListComics = () => {
   );
 };
 
-export default ListComics;
+export default MainComics;

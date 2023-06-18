@@ -1,13 +1,13 @@
 import Characters from "./pages/Characters";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
-import { DetailCharacters } from "./components/Characters/DetailCharacters";
-import { DetailComics } from "./components/Comics/DetailComics";
+import { DetailCharacters } from "./components/Details/DetailCharacters";
+import { DetailComics } from "./components/Details/DetailComics";
 import Comics from "./pages/Comics";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import { Mcu } from "./pages/Mcu";
-import { McuDetails } from "./components/McuDetails";
+import { McuDetails } from "./components/Mcu/McuDetails";
 
 
 const App = () => {
