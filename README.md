@@ -1,6 +1,6 @@
 # Aplicación Vite-React que consume la API de Marvel
 
-Este proyecto es una aplicación creada con Vite y React que consume la API de Marvel. Proporciona una interfaz de usuario para ver información sobre los personajes, cómics y series de Marvel.
+Este proyecto es una aplicación creada con Vite y React que consume la API de Marvel. Proporciona una interfaz de usuario para ver información sobre los personajes, cómics y una sesion especial donde puede buscar los personajes del Universo cinematografico de Marvel.
 
 ## Cómo ejecutar la aplicación
 
