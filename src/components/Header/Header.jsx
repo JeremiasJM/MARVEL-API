@@ -12,7 +12,7 @@ const Header = () => {
     <header>
       <nav className="navbar ">
         <div className="navbar-logo">
-          <Link to={"/"}>
+          <Link to={"/MARVEL-API"}>
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Marvel_Logo.svg"
               alt="Logo"
@@ -20,9 +20,9 @@ const Header = () => {
           </Link>
         </div>
         <div className={`navbar-links ${menuOpen ? "open" : ""}`}>
-          <Link to={"/characters"}>Characters</Link>
-          <Link to={"/comics"}>Comics</Link>
-          <Link to={"/mcu"}>MCU</Link>
+          <Link to={"/MARVEL-API/characters"}>Characters</Link>
+          <Link to={"/MARVEL-API/comics"}>Comics</Link>
+          <Link to={"/MARVEL-API/mcu"}>MCU</Link>
         </div>
 
         <div className="navbar-toggle" onClick={toggleMenu}>

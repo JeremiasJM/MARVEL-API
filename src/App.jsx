@@ -16,13 +16,13 @@ const App = () => {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/MARVEL-API" element={<Home />} />
-          <Route path="/characters" element={<Characters />} />
-          <Route path="/characters/:id" element={<DetailCharacters />} />
-          <Route path="/comics" element={<Comics />} />
-          <Route path="/comics/:id" element={<DetailComics />} />
-          <Route path="/mcu" element={<Mcu />} />
-          <Route path="/mcu/:id" element={<McuDetails />} />
+          <Route path="/MARVEL-API/" element={<Home />} />
+          <Route path="/MARVEL-API/characters" element={<Characters />} />
+          <Route path="/MARVEL-API/characters/:id" element={<DetailCharacters />} />
+          <Route path="/MARVEL-API/comics" element={<Comics />} />
+          <Route path="/MARVEL-API/comics/:id" element={<DetailComics />} />
+          <Route path="/MARVEL-API/mcu" element={<Mcu />} />
+          <Route path="/MARVEL-API/mcu/:id" element={<McuDetails />} />
         </Routes>
         <Footer />
       </BrowserRouter>

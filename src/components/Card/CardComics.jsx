@@ -4,7 +4,7 @@ const ComicsCard = ({ personaje }) => {
   return (
     <div
       key={personaje.id}
-      to={`/comics/${personaje.id}`}
+      to={`/MARVEL-API/comics${personaje.id}`}
       className="card-list"
     >
       <img
@@ -14,7 +14,7 @@ const ComicsCard = ({ personaje }) => {
       <h1 className="title-list" key={personaje.id}>
         {personaje.title}
       </h1>
-      <Link to={`/comics/${personaje.id}`} className="btn-details">
+      <Link to={`/MARVEL-API/comics/${personaje.id}`} className="btn-details">
         Details
       </Link>
     </div>
