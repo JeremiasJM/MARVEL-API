@@ -16,7 +16,7 @@ const App = () => {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/MARVEL-API" element={<Home />} />
           <Route path="/characters" element={<Characters />} />
           <Route path="/characters/:id" element={<DetailCharacters />} />
           <Route path="/comics" element={<Comics />} />
