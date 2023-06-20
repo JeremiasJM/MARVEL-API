@@ -43,7 +43,7 @@ export const DetailComics = () => {
                   <p>Not found Characters</p>
                 ) : (
                   comic.characters.items.map((c) => (
-                    <li key={Math.random() * 1000}> -{c.name} </li>
+                    <p key={Math.random() * 1000}> -{c.name} </p>
                   ))
                 )}
               </ul>

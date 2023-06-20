@@ -5,7 +5,6 @@ import SearchFilter from "../Search/Search";
 import CharacterList from "../List/ListCharacters";
 import PaginationButtons from "../PaginationButton/PaginationButton";
 import { DotSpinner } from "@uiball/loaders";
-
 const MainCharacters = () => {
   const [visibleCount, setVisibleCount] = useState(6);
   const [searchTerm, setSearchTerm] = useState("");

@@ -1,5 +1,4 @@
 import md5 from "md5";
-
 export const charactersUrl = "https://gateway.marvel.com/v1/public/characters";
 export const comicsUrl = "https://gateway.marvel.com/v1/public/comics";
 export const eventsUrl = "https://gateway.marvel.com/v1/public/events";

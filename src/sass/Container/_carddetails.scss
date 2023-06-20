@@ -28,14 +28,18 @@
   align-items: start;
 }
 .detail-card-info h2 {
+  font-family: var(--title);
   text-decoration: underline;
   margin-top: 0.5rem;
 }
 .detail-card-info h3 {
+  font-family: var(--sub-title);
   margin-top: 0.5rem;
 }
 .detail-card-info p {
   margin-top: 0.5rem;
+  font-family: var(--sub-title);
+  font-size: var(--h3-font-size);
 }
 
 @media (max-width: 768px) {

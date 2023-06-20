@@ -3,6 +3,11 @@
   margin: 2rem auto;
   min-height: 62.5vh;
 }
+.container-mcu h3{
+  font-family: var(--title);
+  font-size: var(--h2-font-size);
+  text-align: center;
+}
 .container.large {
   width: min(90%, 72rem);
 }

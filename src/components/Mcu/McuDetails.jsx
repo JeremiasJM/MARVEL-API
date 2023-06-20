@@ -46,9 +46,9 @@ export const McuDetails = () => {
             </>
           ) : null}
           <ul>
-            <h4>Series</h4>
+            <h2>Series</h2>
             {hero.series.items.map((s) => (
-              <li key={Math.random() * 1000}>{s.name}</li>
+              <p key={Math.random() * 1000}>{s.name}</p>
             ))}
           </ul>
         </div>
