@@ -8,8 +8,9 @@ const ComicsCard = ({ personaje }) => {
       className="card-list"
     >
       <img
+        loading="lazy"
         src={`${personaje.thumbnail.path}.${personaje.thumbnail.extension}`}
-        alt=""
+        alt={personaje.title}
       />
       <h1 className="title-list" key={personaje.id}>
         {personaje.title}

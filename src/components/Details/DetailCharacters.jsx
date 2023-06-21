@@ -21,8 +21,9 @@ export const DetailCharacters = () => {
         {data?.map((personaje) => (
           <div className="detail-card" key={Math.random() * 1000}>
             <img
+              loading="lazy"
               src={`${personaje.thumbnail.path}.${personaje.thumbnail.extension}`}
-              alt=""
+              alt={personaje.name}
             />
             <div className="detail-card-info">
               <h2>TITLE</h2>

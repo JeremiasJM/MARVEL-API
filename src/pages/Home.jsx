@@ -25,8 +25,9 @@ export const Home = () => {
           </div>
         </div>
         <img
+          loading="lazy"
           src="https://cdn.marvel.com/u/prod/marvel/i/mg/8/e0/52bdf830aa094.jpg"
-          alt=""
+          alt="portada-home"
         />
       </main>
       <CardHome />
