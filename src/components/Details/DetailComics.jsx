@@ -34,11 +34,11 @@ export const DetailComics = () => {
                 </>
               ) : (
                 <>
-                  <p>Not Found Description</p>
+                  <h2>Not Found Description</h2>
                 </>
               )}
               <ul>
-                <h2>Characters:</h2>
+                <h2>Characters :</h2>
                 {comic.characters.items.length === 0 ? (
                   <p>Not found Characters</p>
                 ) : (

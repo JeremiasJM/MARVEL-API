@@ -34,15 +34,15 @@ export const DetailCharacters = () => {
                 </>
               ) : (
                 <>
-                  <p>Not Found Description</p>
+                  <h2>Not Found Description</h2>
                 </>
               )}
               <ul>
-                <h2>PERSONAJES:</h2>
+                <h2>Comics:</h2>
                 {personaje.series.items.length === 0 ? (
-                  <p>Not found Series</p>
+                  <h2>Not found Series</h2>
                 ) : (
-                  personaje.series.items.map((personaje) => (
+                  personaje.comics.items.map((personaje) => (
                     <p key={Math.random() * 1000}> {personaje.name} </p>
                   ))
                 )}

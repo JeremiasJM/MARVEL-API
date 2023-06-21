@@ -1,7 +1,7 @@
 .container-mcu {
-  width: min(90%, 45rem);
+  width: min(80%, 35rem);
   margin: 2rem auto;
-  min-height: 62.5vh;
+  min-height: 58vh;
 }
 .container-mcu h3{
   font-family: var(--title);
@@ -64,5 +64,32 @@
   }
   to {
     opacity: 1;
+  }
+}
+@media (max-width:500px){
+  .container-mcu{
+    margin: .5rem auto;
+  }
+  .form-mcu{
+    margin: .5rem 0;
+    gap: .5rem;
+  }
+  .form-mcu button{
+    padding: 5px 25px;
+  }
+  .container-mcu h3{
+    font-size: var(--normal-font-size);
+  }
+  .grid-mcu{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .grid-mcu a{
+    height: 200px;
+  }
+  .card-mcu {
+    height: 200px;
+  }
+  .card-mcu img{
+    height: 100%;
   }
 }

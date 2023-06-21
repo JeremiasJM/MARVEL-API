@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const CardHome = () => {
   return (
     <div className="card-home ">
-      <h2>Sessiones</h2>
+      <h2>Sessions</h2>
       <section className="cards container ">
         <article className="card card--1">
           <div className="card__img"></div>
