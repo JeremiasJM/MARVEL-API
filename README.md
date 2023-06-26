@@ -14,6 +14,14 @@ Antes de ejecutar la aplicación, asegúrate de tener instalado Node.js en tu m�
 3. Instala las dependencias: npm install.
 4. Inicia la aplicación: npm run dev
  
+## Descripcion 
+El Sitio cuenta con un Home y tres sesiones:
+
+1. Characters : donde podrás encontrar un listado de 100 personajes(100 es el límite que tiene la API para mostrar), en el cual podrás acceder a sus detalles y ver su imagen, su nombre, su descripción y una lista de los cómics en los que ha aparecido.
+   
+2.	Comics : donde podrás encontrar un listado de 100 comics(100 es el límite que tiene la API para mostrar), en el cual podrás acceder a sus detalles y ver su imagen, su título, su descripción y una lista de los personajes que aparecen en él.
+	
+3.	MCU : En esta sesión podrás buscar el cualquier personajes que este en esta API , que son aproximadamente 1450 personajes, en el cual podrás acceder a sus detalles y ver su imagen, su nombre, su descripción y una lista de los cómics en los que ha aparecido.
 
 
 ## Autor
